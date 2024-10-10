@@ -27,7 +27,7 @@
           "Y88P"                      
                                                                                         
                                                                                                       
- Version:0.1 
+version:1.0 
 
 usage: ./ngulf -t [target] -p [port] -t [number threads]
 
@@ -42,14 +42,15 @@ options:
   -p <int>         specify port target (default = 80) |only required with pyslow attack|
   -s <int>         set sleep time for reconnection
   -i <ip address>  specify spoofed ip unless use fake ip
-  -Request         enable request target
-  -Synflood        enable synflood attack
-  -Pyslow          enable pyslow attack
+  -request         enable request target
+  -synflood        enable synflood attack
+  -pyslow          enable pyslow attack
   --fakeip         Option to create fake ip if not specify spoofed ip
 
 Example:
     ./ngulf -d www.example.com -p 80 -T 2000 -Pyslow
     ./ngulf -d www.domain.com -s 100 -Request
     ./ngulf -d www.google.com -Synflood -T 5000 -t 10.0
+
 ```
     
