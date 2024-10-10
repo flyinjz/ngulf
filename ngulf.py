@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-version= '0.1'
+version= '1.0'
 title = '''
                            888  .d888 
                            888 d88P"  
@@ -15,7 +15,7 @@ title = '''
           "Y88P"                      
                                                                                         
                                                                                                       
- Version:'''+version+''' 
+version:'''+version+''' 
 '''
 
 import re
@@ -367,9 +367,9 @@ Example:
 	options.add_argument('-p',metavar='<int>',default=80,help='specify port target (default = 80)' + colored(' |only required with pyslow attack|','red'))
 	options.add_argument('-s',metavar='<int>',default=100,help='set sleep time for reconnection')
 	options.add_argument('-i',metavar='<ip address>',default=False,help='specify spoofed ip unless use fake ip')
-	options.add_argument('-Request',action='store_true',help='enable request target')
-	options.add_argument('-Synflood',action='store_true',help='enable synflood attack')
-	options.add_argument('-Pyslow',action='store_true',help='enable pyslow attack')
+	options.add_argument('-request',action='store_true',help='enable request target')
+	options.add_argument('-synflood',action='store_true',help='enable synflood attack')
+	options.add_argument('-pyslow',action='store_true',help='enable pyslow attack')
 	options.add_argument('--fakeip',action='store_true',default=False,help='Option to create fake ip if not specify spoofed ip')
 	args = parser.parse_args()
 	if args.d == False:
