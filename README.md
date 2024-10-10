@@ -47,7 +47,7 @@ options:
   -pyslow          enable pyslow attack
   --fakeip         Option to create fake ip if not specify spoofed ip
 
-Example:
+example:
     ./ngulf -d www.example.com -p 80 -T 2000 -Pyslow
     ./ngulf -d www.domain.com -s 100 -Request
     ./ngulf -d www.google.com -Synflood -T 5000 -t 10.0
